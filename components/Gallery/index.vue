@@ -5,7 +5,7 @@ const currentSlide = ref(0);
 </script>
 
 <template>
-  <div class="gallery">
+  <div class="gallery container">
     <div class="gallery_mainframe">
       <img :src="galleryData[currentSlide].lg" alt="Большое изображение" />
     </div>

@@ -3,7 +3,7 @@ import { footerData } from "./footerData";
 </script>
 
 <template>
-  <div class="footer">
+  <footer class="footer container">
     <div>
       <Logo :size="24" variant="white" />
       <Navigation variant="white" />
@@ -30,7 +30,7 @@ import { footerData } from "./footerData";
       <p>{{ footerData.copyrigth }}</p>
       <a href="">{{ footerData.documentslink.title }}</a>
     </div>
-  </div>
+  </footer>
 </template>
 
 <style lang="scss"></style>

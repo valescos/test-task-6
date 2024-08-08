@@ -1,11 +1,13 @@
 <template>
-  <Header />
-  <Hero />
-  <Clients />
-  <Services />
-  <Gallery />
-  <WorkingProcess />
-  <Footer />
+  <div class="main">
+    <AppHeader />
+    <Hero />
+    <Clients />
+    <Services />
+    <Gallery />
+    <WorkingProcess />
+    <AppFooter />
+  </div>
 </template>
 
 <!-- 

@@ -8,7 +8,7 @@ defineProps({
 
 <template>
   <nav class="navigation">
-    <ul :class="variant === black ? 'navigation_black' : 'navigation_white'">
+    <ul :class="variant === 'black' ? 'navigation_black' : 'navigation_white'">
       <li v-for="item in navigationData" :key="item">{{ item }}</li>
     </ul>
   </nav>

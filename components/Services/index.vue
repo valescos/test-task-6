@@ -4,7 +4,7 @@ import Service from "./Service.vue";
 </script>
 
 <template>
-  <div class="services">
+  <section class="services container">
     <div class="services_header">
       <h2>{{ servicesData.title }}</h2>
       <p>{{ servicesData.text }}</p>
@@ -16,7 +16,7 @@ import Service from "./Service.vue";
         :img="item.img"
       />
     </div>
-  </div>
+  </section>
 </template>
 
 <style lang="scss"></style>

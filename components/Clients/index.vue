@@ -3,11 +3,11 @@ import { clientsData } from "./clientsData";
 </script>
 
 <template>
-  <div class="clients">
+  <section class="clients container">
     <div v-for="item in clientsData">
       <img :src="item" alt="Логотип компании" />
     </div>
-  </div>
+  </section>
 </template>
 
 <style lang="scss"></style>

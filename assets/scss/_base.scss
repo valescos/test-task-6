@@ -1,3 +1,49 @@
 * {
   font-family: "Space Grotesk", sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+
+h1 {
+  font-weight: 500;
+  font-size: 60px;
+  line-height: 76px;
+}
+
+h2 {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 51px;
+}
+
+h3 {
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 38px;
+}
+
+h4 {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 25px;
+}
+
+p {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
 }
