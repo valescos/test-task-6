@@ -7,8 +7,8 @@ import { headerData } from "./headerData";
     <Logo :size="36" variant="black" />
     <div>
       <Navigation variant="black" />
-      <button>{{ headerData.button.text }}</button>
-      <button><img :src="headerData.burger" /></button>
+      <button class="btn">{{ headerData.button.text }}</button>
+      <button class="burger"><img :src="headerData.burger" /></button>
     </div>
   </header>
 </template>

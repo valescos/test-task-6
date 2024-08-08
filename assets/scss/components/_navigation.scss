@@ -3,5 +3,13 @@
     list-style: none;
     display: flex;
     gap: 40px;
+    font-size: 20px;
+
+    li {
+      cursor: pointer;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
   }
 }
