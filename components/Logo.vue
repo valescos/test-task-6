@@ -7,7 +7,6 @@ defineProps({
 
 <template>
   <svg
-    width="220"
     :height="size"
     viewBox="0 0 220 36"
     fill="none"

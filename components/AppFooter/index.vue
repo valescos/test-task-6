@@ -4,16 +4,16 @@ import { footerData } from "./footerData";
 
 <template>
   <footer class="footer container">
-    <div>
+    <div class="footer_head">
       <Logo :size="24" variant="white" />
       <Navigation variant="white" />
-      <img
-        v-for="item in footerData.socialmedia"
-        :src="item"
-        alt="Иконка соц. сети"
-      />
+      <div class="footer_header_social_media">
+        <a v-for="item in footerData.socialmedia" href="">
+          <img :src="item" alt="Иконка соц. сети" />
+        </a>
+      </div>
     </div>
-    <div class="footer_wrapper">
+    <div class="footer_content">
       <div class="contact_us">
         <h4>{{ footerData.title }}</h4>
         <p>{{ footerData.email }}</p>
@@ -22,13 +22,15 @@ import { footerData } from "./footerData";
       </div>
       <div class="subscribe_form">
         <input type="text" name="" id="" placeholder="Email" />
-        <button>{{ footerData.button.title }}</button>
+        <button class="btn">{{ footerData.button.title }}</button>
       </div>
     </div>
-    <hr />
     <div class="copyright">
-      <p>{{ footerData.copyrigth }}</p>
-      <a href="">{{ footerData.documentslink.title }}</a>
+      <hr />
+      <div>
+        <p>{{ footerData.copyrigth }}</p>
+        <a href="">{{ footerData.documentslink.title }}</a>
+      </div>
     </div>
   </footer>
 </template>

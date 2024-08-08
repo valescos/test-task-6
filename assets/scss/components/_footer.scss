@@ -1,28 +1,83 @@
 .footer {
   background-color: $color-dark;
   color: white;
+  padding: 60px 100px;
+  border-radius: 45px 45px 0px 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
 
-  .footer_wrapper {
+  .footer_head {
     display: flex;
     justify-content: space-between;
+    .footer_header_social_media {
+      display: flex;
+      gap: 10px;
+    }
+  }
+
+  .footer_content {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
     gap: 40px;
 
     .contact_us {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+
       h4 {
         padding: 0 7px;
         border-radius: 7px;
         background-color: $color-green;
         color: black;
+        align-self: flex-start;
       }
     }
     .subscribe_form {
-      flex-basis: 65%;
       background-color: #292a32;
+      padding: 58px 40px 58px 40px;
+      border-radius: 14px;
+      display: flex;
+      gap: 10px;
+
+      input {
+        background: none;
+        border-radius: 14px;
+        border: 1px white solid;
+        flex-grow: 1;
+        padding: 22px 35px 22px 35px;
+
+        &::placeholder {
+          color: white;
+          font-size: 18px;
+        }
+      }
+
+      .btn {
+        cursor: pointer;
+        padding: 20px 35px 20px 35px;
+        background-color: $color-green;
+        font-size: 20px;
+        border-radius: 14px;
+      }
     }
   }
+
   .copyright {
-    display: flex;
-    align-items: center;
-    gap: 40px;
+    hr {
+      margin-bottom: 20px;
+    }
+    div {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+
+      a {
+        &:visited {
+          color: inherit;
+        }
+      }
+    }
   }
 }
