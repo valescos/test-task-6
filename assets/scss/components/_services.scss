@@ -2,23 +2,109 @@
   .services_header {
     display: flex;
     align-items: center;
-    gap: 40px;
+    gap: 20px;
+    padding-top: 20px;
+    padding-bottom: 40px;
 
     h2 {
       background-color: $color-green;
+      padding: 0px 7px;
+      border-radius: 7px;
     }
     p {
-      width: 35%;
+      width: 50%;
     }
   }
-  .services_wrapper {
+  .services_content {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 30px;
+    gap: 40px;
 
     .service {
+      padding: 50px;
+      height: 310px;
+      border: 1px solid $color-dark;
+      border-bottom: 6px solid $color-dark;
+      border-radius: 45px;
       display: flex;
       justify-content: space-between;
+      background-color: $color-light;
+
+      img {
+        width: 210px;
+        object-fit: scale-down;
+      }
+
+      div {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        justify-content: space-between;
+
+        button {
+          cursor: pointer;
+          border: none;
+          background: none;
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          font-size: 20px;
+        }
+
+        div {
+          display: flex;
+          flex-direction: column;
+
+          h3 {
+            align-self: flex-start;
+            background-color: $color-green;
+            padding: 0px 7px;
+            border-radius: 7px;
+          }
+        }
+      }
+    }
+    .service-green {
+      background-color: $color-green;
+      div {
+        div {
+          h3 {
+            background-color: $color-light;
+          }
+        }
+      }
+    }
+    .service-black {
+      background-color: $color-dark;
+      div {
+        button {
+          color: #ffffff;
+          svg {
+            circle {
+              fill: #ffffff;
+            }
+            path {
+              fill: $color-dark;
+            }
+          }
+        }
+
+        div {
+          h3 {
+            background-color: #ffffff;
+          }
+        }
+      }
+    }
+
+    .last {
+      div {
+        div {
+          h3 {
+            background-color: $color-green;
+          }
+        }
+      }
     }
   }
 }

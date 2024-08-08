@@ -3,27 +3,33 @@ export const servicesData = {
   text: "At our digital marketing agency, we offer a range of services to help businesses grow and succeed online. These services include:",
   list: [
     {
-      title: "Search engine optimization",
+      firstline: "Search engine",
+      secondline: "optimization",
       img: "/images/services/service01.png",
     },
     {
-      title: "Pay-per-click advertising",
+      firstline: "Pay-per-click",
+      secondline: "advertising",
       img: "/images/services/service02.png",
     },
     {
-      title: "Social Media Marketing",
+      firstline: "Social Media",
+      secondline: "Marketing",
       img: "/images/services/service03.png",
     },
     {
-      title: "Email Marketing",
+      firstline: "Email",
+      secondline: "Marketing",
       img: "/images/services/service04.png",
     },
     {
-      title: "Content Creation",
+      firstline: "Content",
+      secondline: "Creation",
       img: "/images/services/service05.png",
     },
     {
-      title: "Analytics and Tracking",
+      firstline: "Analytics and",
+      secondline: "Tracking",
       img: "/images/services/service06.png",
     },
   ],

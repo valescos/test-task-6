@@ -9,11 +9,14 @@ import Service from "./Service.vue";
       <h2>{{ servicesData.title }}</h2>
       <p>{{ servicesData.text }}</p>
     </div>
-    <div class="services_wrapper">
+    <div class="services_content">
       <Service
-        v-for="item in servicesData.list"
-        :title="item.title"
+        v-for="(item, index) in servicesData.list"
+        :key="index"
+        :firstline="item.firstline"
+        :secondline="item.secondline"
         :img="item.img"
+        :index="index"
       />
     </div>
   </section>
