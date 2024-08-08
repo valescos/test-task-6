@@ -5,6 +5,8 @@ import { footerData } from "./footerData";
 <template>
   <div class="footer">
     <div>
+      <Logo :size="24" variant="white" />
+      <Navigation variant="white" />
       <img
         v-for="item in footerData.socialmedia"
         :src="item"
