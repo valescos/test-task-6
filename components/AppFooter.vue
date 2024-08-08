@@ -1,1 +1,0 @@
-<template>FOO</template>

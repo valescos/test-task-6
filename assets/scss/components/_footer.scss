@@ -1,0 +1,28 @@
+.footer {
+  background-color: $color-dark;
+  color: white;
+
+  .footer_wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+
+    .contact_us {
+      h4 {
+        padding: 0 7px;
+        border-radius: 7px;
+        background-color: $color-green;
+        color: black;
+      }
+    }
+    .subscribe_form {
+      flex-basis: 65%;
+      background-color: #292a32;
+    }
+  }
+  .copyright {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+  }
+}

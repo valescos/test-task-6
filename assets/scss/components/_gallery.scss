@@ -1,0 +1,11 @@
+.gallery {
+  .gallery_mainframe {
+    img {
+      width: 50%;
+    }
+  }
+  .gallery_picker {
+    display: flex;
+    justify-content: space-between;
+  }
+}
