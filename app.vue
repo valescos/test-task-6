@@ -1,7 +1,5 @@
 <template>
-  <AppHeader />
-  <Test />
-  <AppFooter />
+  <Header />
 </template>
 
 <!-- 
