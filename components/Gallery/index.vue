@@ -10,12 +10,18 @@ const currentSlide = ref(0);
       <img :src="galleryData[currentSlide].lg" alt="Большое изображение" />
     </div>
     <div class="gallery_picker">
-      <img
+      <div
         v-for="(item, index) in galleryData"
-        :src="item.sm"
-        @click="currentSlide = index"
-        alt="Маленькое изображение"
-      />
+        :key="index"
+        class="gallery_picker_item"
+        :class="currentSlide === index && 'gallery_picker_item_selected'"
+      >
+        <img
+          :src="item.sm"
+          @click="currentSlide = index"
+          alt="Маленькое изображение"
+        />
+      </div>
     </div>
   </div>
 </template>

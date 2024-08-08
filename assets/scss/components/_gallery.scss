@@ -1,11 +1,36 @@
 .gallery {
   .gallery_mainframe {
+    height: 480px;
+    display: flex;
+    justify-content: center;
+    border: 3px solid black;
+    border-radius: 45px;
+    margin-bottom: 40px;
+    overflow: hidden;
+
     img {
-      width: 50%;
+      height: 100%;
     }
   }
   .gallery_picker {
     display: flex;
     justify-content: space-between;
+
+    .gallery_picker_item {
+      cursor: pointer;
+      width: 173px;
+      height: 165px;
+      border: 2px solid black;
+      border-radius: 12px;
+      overflow: hidden;
+      object-fit: fill;
+
+      &:hover {
+        filter: brightness(1.1);
+      }
+    }
+    .gallery_picker_item_selected {
+      border-color: $color-green;
+    }
   }
 }
