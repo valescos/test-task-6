@@ -7,7 +7,7 @@ import { heroData } from "./heroData";
     <div>
       <h1>{{ heroData.title }}</h1>
       <p>{{ heroData.text }}</p>
-      <button>{{ heroData.button.text }}</button>
+      <button class="btn">{{ heroData.button.text }}</button>
     </div>
     <img :src="heroData.img" alt="Иллюстрация" />
   </section>

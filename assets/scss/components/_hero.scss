@@ -5,7 +5,15 @@
   div {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    gap: 40px;
+    .btn {
+      cursor: pointer;
+      color: white;
+      padding: 20px 35px 20px 35px;
+      background-color: $color-dark;
+      font-size: 20px;
+      border-radius: 14px;
+    }
 
     button {
       align-self: self-start;
