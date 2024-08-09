@@ -1,5 +1,8 @@
 <script setup>
 import { headerData } from "./headerData";
+import HeaderMenu from "./HeaderMenu.vue";
+
+const isMenuOpened = ref(false);
 </script>
 
 <template>
@@ -9,8 +12,11 @@ import { headerData } from "./headerData";
     <div>
       <Navigation variant="black" class="header_nav" />
       <button class="btn">{{ headerData.button.text }}</button>
-      <button class="burger"><img :src="headerData.burger" /></button>
+      <button @click="isMenuOpened = !isMenuOpened" class="burger">
+        <img :src="headerData.burger" />
+      </button>
     </div>
+    <HeaderMenu v-if="isMenuOpened" class="header_menu" />
   </header>
 </template>
 
