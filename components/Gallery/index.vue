@@ -1,5 +1,7 @@
 <script setup>
 import { galleryData } from "./galleryData";
+
+const currenSlide = ref(0);
 </script>
 
 <template>
