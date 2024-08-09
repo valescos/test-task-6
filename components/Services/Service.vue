@@ -22,14 +22,14 @@ defineProps({
         : null
     "
   >
-    <div>
-      <div>
-        <h3>{{ firstline }}</h3>
-        <h3>{{ secondline }}</h3>
-      </div>
-      <button><ArrowIcon /> Learn More</button>
+    <div class="service_header">
+      <h3>{{ firstline }}</h3>
+      <h3>{{ secondline }}</h3>
     </div>
-    <img :src="img" alt="Иллюстрация" />
+    <div class="service_content">
+      <button><ArrowIcon /><span>Learn More</span></button>
+      <img :src="img" alt="Иллюстрация" />
+    </div>
   </div>
 </template>
 

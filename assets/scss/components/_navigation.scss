@@ -1,9 +1,16 @@
 .navigation {
+  margin-left: -24px;
   ul {
     list-style: none;
     display: flex;
-    gap: 40px;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
     font-size: 20px;
+
+    @include for-middle-screen {
+      flex-direction: row;
+    }
 
     li {
       cursor: pointer;

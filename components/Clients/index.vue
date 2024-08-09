@@ -4,8 +4,22 @@ import { clientsData } from "./clientsData";
 
 <template>
   <section class="clients container">
-    <div v-for="item in clientsData">
-      <img :src="item" alt="Логотип компании" />
+    <div class="clients_full">
+      <img v-for="item in clientsData" :src="item" alt="Логотип компании" />
+    </div>
+    <div class="clients_first_half">
+      <img
+        v-for="item in clientsData.slice(0, clientsData.length / 2)"
+        :src="item"
+        alt="Логотип компании"
+      />
+    </div>
+    <div class="clients_second_half">
+      <img
+        v-for="item in clientsData.slice(clientsData.length / 2)"
+        :src="item"
+        alt="Логотип компании"
+      />
     </div>
   </section>
 </template>

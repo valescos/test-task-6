@@ -1,8 +1,22 @@
 .header {
-  padding-top: 60px;
+  padding-top: 30px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  .logo {
+    display: none;
+    @include for-middle-screen {
+      display: block;
+    }
+  }
+
+  .small_logo {
+    display: block;
+    @include for-middle-screen {
+      display: none;
+    }
+  }
 
   img {
     height: 35px;
@@ -14,6 +28,13 @@
     gap: 40px;
   }
 
+  .header_nav {
+    display: none;
+    @include for-big-screen {
+      display: block;
+    }
+  }
+
   .btn {
     cursor: pointer;
     padding: 20px 35px 20px 35px;
@@ -21,9 +42,22 @@
     font-size: 20px;
     border-radius: 14px;
     border: 1px solid $color-dark;
+
+    display: none;
+    @include for-big-screen {
+      display: block;
+    }
   }
 
   .burger {
-    display: none;
+    display: block;
+    background: none;
+    scale: 0.8;
+    border: none;
+    cursor: pointer;
+
+    @include for-big-screen {
+      display: none;
+    }
   }
 }

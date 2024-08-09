@@ -12,38 +12,66 @@
 
 h1 {
   font-weight: 500;
-  font-size: 60px;
-  line-height: 76px;
+  font-size: 43px;
+  line-height: 55px;
+
+  @include for-middle-screen {
+    font-size: 60px;
+    line-height: 76px;
+  }
 }
 
 h2 {
   font-weight: 500;
-  font-size: 40px;
-  line-height: 51px;
+  font-size: 36px;
+  line-height: 46px;
+
+  @include for-middle-screen {
+    font-size: 40px;
+    line-height: 51px;
+  }
 }
 
 h3 {
   font-weight: 500;
-  font-size: 30px;
-  line-height: 38px;
+  font-size: 26px;
+  line-height: 33px;
+
+  @include for-middle-screen {
+    font-size: 30px;
+    line-height: 38px;
+  }
 }
 
 h4 {
   font-weight: 500;
-  font-size: 20px;
-  line-height: 25px;
+  font-size: 18px;
+  line-height: 23px;
+
+  @include for-middle-screen {
+    font-size: 20px;
+    line-height: 25px;
+  }
 }
 
 p {
   font-weight: 400;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 23px;
+
+  @include for-middle-screen {
+    font-size: 18px;
+    line-height: 23px;
+  }
 }
 
 .container {
   width: 100%;
-  max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
   box-sizing: border-box;
+
+  @include for-big-screen {
+    max-width: 1200px;
+  }
 }

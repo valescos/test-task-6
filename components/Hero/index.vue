@@ -6,6 +6,7 @@ import { heroData } from "./heroData";
   <section class="hero container">
     <div>
       <h1>{{ heroData.title }}</h1>
+      <img :src="heroData.img" alt="Иллюстрация" class="small_img" />
       <p>{{ heroData.text }}</p>
       <button class="btn">{{ heroData.button.text }}</button>
     </div>

@@ -6,7 +6,7 @@ import { footerData } from "./footerData";
   <footer class="footer container">
     <div class="footer_head">
       <Logo :size="24" variant="white" />
-      <Navigation variant="white" />
+      <Navigation variant="white" class="footer_nav" />
       <div class="footer_header_social_media">
         <a v-for="item in footerData.socialmedia" href="">
           <img :src="item" alt="Иконка соц. сети" />
@@ -24,6 +24,11 @@ import { footerData } from "./footerData";
         <input type="text" name="" id="" placeholder="Email" />
         <button class="btn">{{ footerData.button.title }}</button>
       </div>
+    </div>
+    <div class="footer_header_social_media">
+      <a v-for="item in footerData.socialmedia" href="">
+        <img :src="item" alt="Иконка соц. сети" />
+      </a>
     </div>
     <div class="copyright">
       <hr />

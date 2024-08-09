@@ -1,6 +1,48 @@
 .clients {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  position: relative;
   filter: grayscale(1);
+
+  .clients_full {
+    display: none;
+    justify-content: space-between;
+
+    @include for-middle-screen {
+      display: flex;
+    }
+  }
+
+  .clients_first_half {
+    position: relative;
+    width: 125%;
+
+    @include for-small-screen {
+      right: 0;
+      width: 100%;
+    }
+  }
+
+  .clients_second_half {
+    position: relative;
+    left: -25%;
+    width: 125%;
+
+    @include for-small-screen {
+      left: 0;
+      width: 100%;
+    }
+  }
+
+  .clients_first_half,
+  .clients_second_half {
+    display: flex;
+    justify-content: space-between;
+
+    img {
+      height: 40px;
+    }
+
+    @include for-middle-screen {
+      display: none;
+    }
+  }
 }

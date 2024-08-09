@@ -1,45 +1,90 @@
 .footer {
   background-color: $color-dark;
+  padding: 60px 10px;
   color: white;
-  padding: 60px 100px;
-  border-radius: 45px 45px 0px 0px;
   display: flex;
   flex-direction: column;
-  gap: 60px;
+  gap: 30px;
+
+  @include for-middle-screen {
+    border-radius: 45px 45px 0px 0px;
+    padding: 60px 100px;
+    gap: 60px;
+  }
 
   .footer_head {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+
+    @include for-middle-screen {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
     .footer_header_social_media {
-      display: flex;
-      gap: 10px;
+      display: none;
+
+      @include for-middle-screen {
+        display: flex;
+        gap: 10px;
+      }
     }
   }
 
   .footer_content {
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    justify-items: center;
     gap: 40px;
+
+    @include for-middle-screen {
+      grid-template-columns: 1fr 2fr;
+    }
 
     .contact_us {
       display: flex;
       flex-direction: column;
       gap: 20px;
+      align-items: center;
+
+      @include for-middle-screen {
+        align-items: flex-start;
+      }
+
+      p {
+        text-align: center;
+
+        @include for-middle-screen {
+          text-align: left;
+        }
+      }
 
       h4 {
         padding: 0 7px;
         border-radius: 7px;
         background-color: $color-green;
         color: black;
-        align-self: flex-start;
+
+        @include for-middle-screen {
+          align-self: flex-start;
+        }
       }
     }
     .subscribe_form {
       background-color: #292a32;
-      padding: 58px 40px 58px 40px;
+      padding: 20px;
+
       border-radius: 14px;
       display: flex;
+      flex-direction: column;
       gap: 10px;
+      width: 100%;
+
+      @include for-middle-screen {
+        flex-direction: row;
+        padding: 58px 40px 58px 40px;
+      }
 
       input {
         background: none;
@@ -64,14 +109,29 @@
     }
   }
 
+  .footer_header_social_media {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+
+    @include for-middle-screen {
+      display: none;
+    }
+  }
+
   .copyright {
     hr {
       margin-bottom: 20px;
     }
     div {
       display: flex;
+      flex-direction: column;
       align-items: center;
-      gap: 20px;
+
+      @include for-middle-screen {
+        gap: 20px;
+        flex-direction: row;
+      }
 
       a {
         &:visited {
