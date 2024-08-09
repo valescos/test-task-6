@@ -1,6 +1,11 @@
-# Nuxt 3 Minimal Starter
+# Вёрстка лендинга
+### _Тестовое задание при приёме на работу_
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+[valescos-test-task-5.netlify.app](https://valescos-test-task-5.netlify.app)
+
+#### Технологии:
+- Nuxt
+- SCSS
 
 ## Setup
 
