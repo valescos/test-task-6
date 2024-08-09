@@ -1,29 +1,27 @@
 <script setup>
 import { galleryData } from "./galleryData";
-
-const currentSlide = ref(0);
 </script>
 
 <template>
   <div class="gallery container">
-    <div class="gallery_mainframe">
-      <img :src="galleryData[currentSlide].lg" alt="Большое изображение" />
-    </div>
-    <div class="gallery_picker">
-      <div
-        v-for="(item, index) in galleryData"
-        :key="index"
-        class="gallery_picker_item"
-        :class="currentSlide === index && 'gallery_picker_item_selected'"
-      >
-        <img
-          :src="item.sm"
-          @click="currentSlide = index"
-          alt="Маленькое изображение"
-        />
-      </div>
-    </div>
+    <Swiper
+      :modules="[SwiperPagination]"
+      :slides-per-view="1"
+      :loop="true"
+      :pagination="{
+        clickable: true,
+      }"
+      class="swiper-container"
+    >
+      <SwiperSlide v-for="slide in galleryData.map((i) => i.lg)" :key="slide">
+        <img :src="slide" class="slide" />
+      </SwiperSlide>
+    </Swiper>
   </div>
 </template>
 
-<style lang="scss"></style>
+<style lang="scss">
+.swiper-pagination-bullet-active {
+  background-color: #191a23;
+}
+</style>
